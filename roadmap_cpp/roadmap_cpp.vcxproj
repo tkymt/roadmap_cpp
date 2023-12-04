@@ -24,6 +24,7 @@
     <ProjectGuid>{5415fd00-05ba-4540-9e71-44d8c0bd5079}</ProjectGuid>
     <RootNamespace>roadmapcpp</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>helloworld</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
