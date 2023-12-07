@@ -3,9 +3,29 @@
 
 #include <iostream>
 
+int add(int a, int b) {
+	return a + b;
+}
+
 int main()
 {
-    std::cout << "Hello World!\n";
+	{
+		// ポインターの初期化
+		int num = 10;
+		int* ptr = &num; // ポインターであるptrは、numのメモリアドレスを指す
+
+		// ポインターを使用した値へのアクセス
+		int value = *ptr; // valueは、ptrが指す変数の値が代入される
+
+		// 関数ポインタ
+		int(*funcptr)(int, int) = add;
+		funcptr(4, 5); // 返り値は、9
+	}
+	{
+		// 参照
+		int num = 10;
+		int& ref = num; // 参照であるrefは、numの別名として機能する
+	}
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
