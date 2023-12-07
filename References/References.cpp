@@ -3,9 +3,30 @@
 
 #include <iostream>
 
+void swap(int& a, int& b) {
+	int temp = a;
+	a = b;
+	b = temp;
+}
+
 int main()
 {
-    std::cout << "Hello World!\n";
+	// 宣言と初期化
+	int var = 10;
+	int& ref = var;
+
+	var = 20;
+	std::cout << ref << std::endl; // 出力は、20
+
+	ref = 30;
+	std::cout << var << std::endl; // 出力は、30
+
+	// 関数の引数
+	int x = 5, y = 10;
+	std::cout << "Before Swap: x = " << x << " y = " << y << std::endl;
+
+	swap(x, y);
+	std::cout << "After Swap: x = " << x << " y = " << y << std::endl;
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
