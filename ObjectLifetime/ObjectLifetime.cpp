@@ -1,11 +1,35 @@
 ﻿// ObjectLifetime.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
 //
 
-#include <iostream>
+// 静的ストレージ期間
+// プログラムの実行全体にわたって存在します
+// プログラムの実行開始時に割り当てられ、プログラムの終了時に割り当てが解除されます
+int global_var;
+class MyClass {
+	static int static_var;
+};
+void myFunction() {
+	static int local_var; 
+}
 
-int main()
-{
-    std::cout << "Hello World!\n";
+// スレッドストレージ期間
+// オブジェクトが属するスレッドの存続期間中存在します
+// スレッドの開始時に作成され、スレッドの終了時に破棄されます
+thread_local int my_var;
+
+// 自動ストレージ期間
+// 定義時に作成され、宣言されたスコープが終了すると破棄されます
+void myFunction2() {
+	int local_var;
+}
+
+int main() {
+	// 動的ストレージ期間
+	// メモリ割り当てを実行時に行います
+	// スコープの終了時に自動的な割り当ての解除がされな
+	// いため、手動で割り当てを解除する必要があります
+	int* ptr = new int;
+	delete ptr;
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
