@@ -22,9 +22,10 @@ int main()
         std::shared_ptr<MyClass> ptr2 = ptr1;
 
         std::cout << "Inside the inner scope." << std::endl;
-    }
+    } // ptr2は使えなくなるがデストラクタは呼ばれない
+
     std::cout << "Outside the inner scope." << std::endl;
-}
+}// ptr1もptr2も使えなくなり、デストラクタが呼ばれる
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
 // プログラムのデバッグ: F5 または [デバッグ] > [デバッグの開始] メニュー
