@@ -1,11 +1,16 @@
 ﻿// StructuringCodebase.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
 //
 
-#include <iostream>
+namespace MyNamespace {
+	int aFunction() {
+
+	}
+}
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	// 関数を呼び出す
+	MyNamespace::aFunction();
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
