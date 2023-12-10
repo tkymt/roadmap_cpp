@@ -1,11 +1,49 @@
 ﻿// StructuresClasses.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
 //
 
+#include <string>
 #include <iostream>
+
+// 構造体
+struct Employee {
+    int id;
+    std::string name;
+    float salary;
+};
+
+Employee e1; // Employee構造体のオブジェクトを作る
+
+// クラス
+class Student {
+    int roll_no;
+    std::string name;
+    float marks;
+
+public:
+    void set_data(int r, std::string n, float m) {
+        roll_no = r;
+        name = n;
+        marks = m;
+    }
+
+    void display() {
+        std::cout << "Roll no: " << roll_no
+                  << "\nName: " << name
+                  << "\nMarks: " << marks << std::endl;
+    }
+};
+
+Student s1; // Studentクラスのオブジェクトを作る
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    // 構造体のメンバーには、ドット演算子（.）を使ってアクセスする
+    e1.id = 1;
+    e1.name = "John Doe";
+    e1.salary = 40000;
+
+    s1.set_data(1, "Alice", 95.0);
+    s1.display();
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
