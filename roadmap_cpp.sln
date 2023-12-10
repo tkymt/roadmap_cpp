@@ -45,6 +45,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Scope", "Scope\Scope.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CodeSplitting", "CodeSplitting\CodeSplitting.vcxproj", "{60015EB5-7D9F-4865-9DE3-64ADD220F374}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Namespaces", "Namespaces\Namespaces.vcxproj", "{079BA942-966E-4842-AAD9-4D0034F3AC4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -221,6 +223,14 @@ Global
 		{60015EB5-7D9F-4865-9DE3-64ADD220F374}.Release|x64.Build.0 = Release|x64
 		{60015EB5-7D9F-4865-9DE3-64ADD220F374}.Release|x86.ActiveCfg = Release|Win32
 		{60015EB5-7D9F-4865-9DE3-64ADD220F374}.Release|x86.Build.0 = Release|Win32
+		{079BA942-966E-4842-AAD9-4D0034F3AC4D}.Debug|x64.ActiveCfg = Debug|x64
+		{079BA942-966E-4842-AAD9-4D0034F3AC4D}.Debug|x64.Build.0 = Debug|x64
+		{079BA942-966E-4842-AAD9-4D0034F3AC4D}.Debug|x86.ActiveCfg = Debug|Win32
+		{079BA942-966E-4842-AAD9-4D0034F3AC4D}.Debug|x86.Build.0 = Debug|Win32
+		{079BA942-966E-4842-AAD9-4D0034F3AC4D}.Release|x64.ActiveCfg = Release|x64
+		{079BA942-966E-4842-AAD9-4D0034F3AC4D}.Release|x64.Build.0 = Release|x64
+		{079BA942-966E-4842-AAD9-4D0034F3AC4D}.Release|x86.ActiveCfg = Release|Win32
+		{079BA942-966E-4842-AAD9-4D0034F3AC4D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
