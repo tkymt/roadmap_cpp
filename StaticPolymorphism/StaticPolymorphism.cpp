@@ -3,9 +3,34 @@
 
 #include <iostream>
 
+// 関数のオーバーロード
+void print(int i) {
+    std::cout << "Printing int: " << i << std::endl;
+}
+
+void print(double d) {
+    std::cout << "PRinting double: " << d << std::endl;
+}
+
+void print(const char* const s) {
+    std::cout << "Printing string: " << s << std::endl;
+}
+
+// テンプレート
+// ジェネリック関数またはジェネリッククラスを作れる
+// 実際の特定の型のコードはコンパイル時に生成される
+template<typename T>
+void print(const T& const value) {
+    std::cout << "Printing value: " << value << std::endl;
+}
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    print(5);
+    print(3.14);
+    print("Hello");
+
+    print(std::string("Hello template"));
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
