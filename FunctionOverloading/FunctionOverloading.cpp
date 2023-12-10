@@ -3,9 +3,28 @@
 
 #include <iostream>
 
+// 関数のオーバーロード
+// 静的ポリモーフィズムの一種である
+// 同じ名前の異なる引数を持つ関数を同じスコープで定義できる
+
+void print(int num) {
+    std::cout << "Printing int: " << num << std::endl;
+}
+
+void print(double num) {
+    std::cout << "Printing double: " << num << std::endl;
+}
+
+void print(char const* str) {
+    std::cout << "Printing string: " << str << std::endl;
+}
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    // 指定された引数の型に基づいて適切な関数が選択される
+    print(5);
+    print(3.14);
+    print("Hello, world!");
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
