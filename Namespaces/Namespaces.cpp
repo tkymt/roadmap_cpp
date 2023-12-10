@@ -3,9 +3,38 @@
 
 #include <iostream>
 
+namespace animals {
+    std::string dog = "Bobby";
+    std::string cat = "Liliy";
+}
+
+namespace outer {
+    int x = 10;
+
+    // 他の名前空間の入れ子にできる
+    namespace inner {
+        int y = 20;
+    }
+}
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    {
+        // スコープ解決演算子（::）を使ってアクセスする
+        std::cout << "Dog's name: " << animals::dog << std::endl;
+        std::cout << "Cat's name: " << animals::cat << std::endl;
+    }
+    {
+        // usingキーワードを使うと名前空間の要素を現在のスコープにインポートできる
+        using animals::dog;
+        std::cout << "Dog's name: " << dog << std::endl;
+    }
+    {
+        // 名前空間全体を現在のスコープにインポートする
+        using namespace animals;
+        std::cout << "Dog's name: " << dog << std::endl;
+        std::cout << "Cats name: " << cat << std::endl;
+    }
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
