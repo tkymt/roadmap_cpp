@@ -1,11 +1,29 @@
 ﻿// ForwardDeclaration.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
 //
 
-#include <iostream>
+// 前方宣言は、シンボルを定義する前に宣言する方法だ
+// 循環依存関係がある場合やソースファイルへの不要なヘッダーインクルードを回避できる
+class ClassA; // 前方宣言
+
+// ClassAを定義される前に使える
+void do_sumething(ClassA& obj) {};
+
+// 関数の前方宣言
+int add(int a, int b); // 前方宣言
+
+class ClassB {
+public:
+	void another_function(ClassA& obj) {};
+};
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	int result = add(2, 3);
+}
+
+// 前方宣言をした関数の定義
+int add(int a, int b) {
+	return a + b;
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
