@@ -3,9 +3,41 @@
 
 #include <iostream>
 
+// 基底クラス
+class Shape {
+public:
+    virtual void draw() {
+        std::cout << "Drawing a shape" << std::endl;
+    }
+};
+
+// 派生クラス１
+class Circle : public Shape {
+public:
+    void draw() override {
+        std::cout << "Drawing a circle" << std::endl;
+    }
+};
+
+// 派生クラス２
+class Rectangle :public Shape {
+public:
+    void draw() override {
+        std::cout << "Drawing a Rectangle" << std::endl;
+    }
+};
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    Shape* shape;
+    Circle circle;
+    Rectangle rectangle;
+
+    shape = &circle;
+    shape->draw();
+
+    shape = &rectangle;
+    shape->draw();
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
