@@ -55,6 +55,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ObjectOrientedProgramming",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FunctionOverloading", "FunctionOverloading\FunctionOverloading.vcxproj", "{B41F51F5-CFDC-419D-8C78-42D5B89C656F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StaticPolymorphism", "StaticPolymorphism\StaticPolymorphism.vcxproj", "{CC07CD57-6D71-437A-94C0-550F79D9595E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -271,6 +273,14 @@ Global
 		{B41F51F5-CFDC-419D-8C78-42D5B89C656F}.Release|x64.Build.0 = Release|x64
 		{B41F51F5-CFDC-419D-8C78-42D5B89C656F}.Release|x86.ActiveCfg = Release|Win32
 		{B41F51F5-CFDC-419D-8C78-42D5B89C656F}.Release|x86.Build.0 = Release|Win32
+		{CC07CD57-6D71-437A-94C0-550F79D9595E}.Debug|x64.ActiveCfg = Debug|x64
+		{CC07CD57-6D71-437A-94C0-550F79D9595E}.Debug|x64.Build.0 = Debug|x64
+		{CC07CD57-6D71-437A-94C0-550F79D9595E}.Debug|x86.ActiveCfg = Debug|Win32
+		{CC07CD57-6D71-437A-94C0-550F79D9595E}.Debug|x86.Build.0 = Debug|Win32
+		{CC07CD57-6D71-437A-94C0-550F79D9595E}.Release|x64.ActiveCfg = Release|x64
+		{CC07CD57-6D71-437A-94C0-550F79D9595E}.Release|x64.Build.0 = Release|x64
+		{CC07CD57-6D71-437A-94C0-550F79D9595E}.Release|x86.ActiveCfg = Release|Win32
+		{CC07CD57-6D71-437A-94C0-550F79D9595E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
