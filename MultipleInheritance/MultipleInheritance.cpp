@@ -3,9 +3,40 @@
 
 #include <iostream>
 
+// 基底クラス１
+class Animal {
+public:
+    void eat() {
+        std::cout << "I can eat!" << std::endl;
+    }
+};
+
+// 基底クラス２
+class Mammal {
+public:
+    void breath() {
+        std::cout << "I can breathe!" << std::endl;
+    }
+};
+
+// 多重継承をした子クラス
+class Dog : public Animal, public Mammal {
+public:
+    void bark() {
+        std::cout << "I can bark! Woof woof!" << std::endl;
+    }
+};
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    Dog myDog;
+
+    // 基底クラスのメソッドを呼び出す
+    myDog.eat();
+    myDog.breath();
+
+    // 子クラスのメソッドを呼び出す
+    myDog.bark();
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
