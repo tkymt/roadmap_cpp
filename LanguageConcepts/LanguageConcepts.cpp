@@ -2,10 +2,82 @@
 //
 
 #include <iostream>
+#include <vector>
+
+int add(int a, int b) {
+	return a + b;
+}
+
+struct Student {
+	std::string name;
+	int age;
+};
+
+class Employee {
+public:
+	std::string name;
+	int age;
+	void displayInfo() {
+		std::cout << "Name: " << name << "\nAge: " << age << std::endl;
+	}
+};
+
+class Base {
+public:
+	void display() {
+		std::cout << "This is the base class." << std::endl;
+	}
+};
+
+class Derived :public Base {
+public:
+	void display() {
+		std::cout << "This is the derived class." << std::endl;
+	}
+};
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	int age = 25;
+	float height = 1.7f;
+	double salary = 50000.0;
+	char grade = 'A';
+	bool isEmployed = true;
+
+	if (age > 18) {
+		std::cout << "You are eligible to vote." << std::endl;
+	}
+	else
+	{
+		std::cout << "You are not eligible to vote." << std::endl;
+	}
+
+	for (int i = 0; i < 5; i++)
+	{
+		std::cout << "Hello World!" << std::endl;
+	}
+
+	int marks[] = { 90, 80, 95, 85 };
+	std::vector<int> scores = { 10,20,30,40 };
+
+	int num = 10;
+	int* p = &num;
+
+	Student student = { "John",18 };
+	Employee employee = { "John",18 };
+	employee.displayInfo();
+
+	Base base = Derived();
+	base.display();
+	Derived derived = Derived();
+	derived.display();
+
+	try {
+		throw new std::runtime_error("Runtime error");
+	}
+	catch (const std::exception& e) {
+		std::cout << "Caught an exception: " << e.what();
+	}
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
