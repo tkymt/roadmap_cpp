@@ -2,10 +2,33 @@
 //
 
 #include <iostream>
+#include <cstdlib>
+
+void some_function(int exitcode) {
+	if (exitcode == 1) {
+		std::cout << "An error occurred." << std::endl;
+		std::exit(1);
+	}
+}
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	int exitcode = 0;
+	std::cin >> exitcode;
+
+	if (exitcode == 1) {
+		std::cout << "An error occurred." << std::endl;
+		return 1;
+	}
+
+	if (exitcode == 2) {
+		std::cout << "Another error occurred." << std::endl;
+		return 2;
+	}
+
+	some_function(exitcode);
+
+	return 0; // Successful execution
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
