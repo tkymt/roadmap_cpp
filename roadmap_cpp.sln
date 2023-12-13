@@ -81,6 +81,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LanguageConcepts", "Languag
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AutomaticTypeDeduction", "AutomaticTypeDeduction\AutomaticTypeDeduction.vcxproj", "{B0D60AEE-7F6A-499A-8DA5-AA07EEE6EFAC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TypeCasting", "TypeCasting\TypeCasting.vcxproj", "{20F8CC17-1107-49BE-8EBB-7B1BD99CED38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -401,6 +403,14 @@ Global
 		{B0D60AEE-7F6A-499A-8DA5-AA07EEE6EFAC}.Release|x64.Build.0 = Release|x64
 		{B0D60AEE-7F6A-499A-8DA5-AA07EEE6EFAC}.Release|x86.ActiveCfg = Release|Win32
 		{B0D60AEE-7F6A-499A-8DA5-AA07EEE6EFAC}.Release|x86.Build.0 = Release|Win32
+		{20F8CC17-1107-49BE-8EBB-7B1BD99CED38}.Debug|x64.ActiveCfg = Debug|x64
+		{20F8CC17-1107-49BE-8EBB-7B1BD99CED38}.Debug|x64.Build.0 = Debug|x64
+		{20F8CC17-1107-49BE-8EBB-7B1BD99CED38}.Debug|x86.ActiveCfg = Debug|Win32
+		{20F8CC17-1107-49BE-8EBB-7B1BD99CED38}.Debug|x86.Build.0 = Debug|Win32
+		{20F8CC17-1107-49BE-8EBB-7B1BD99CED38}.Release|x64.ActiveCfg = Release|x64
+		{20F8CC17-1107-49BE-8EBB-7B1BD99CED38}.Release|x64.Build.0 = Release|x64
+		{20F8CC17-1107-49BE-8EBB-7B1BD99CED38}.Release|x86.ActiveCfg = Release|Win32
+		{20F8CC17-1107-49BE-8EBB-7B1BD99CED38}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
