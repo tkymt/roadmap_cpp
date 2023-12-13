@@ -3,9 +3,24 @@
 
 #include <iostream>
 
+class Base {};
+class Derived:public Base {};
+
+enum Color { RED, GREEN, BLUE };
+
 int main()
 {
-    std::cout << "Hello World!\n";
+	// 静的キャスト
+	// コンパイル時にチェックされる
+	int i = 42;
+	float f = static_cast<float>(i);
+
+	Base* bPtr = new Derived;
+	Derived* dPtr = static_cast<Derived*>(bPtr);
+	delete bPtr;
+
+	int value = 1;
+	Color coloer = static_cast<Color>(value);
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
