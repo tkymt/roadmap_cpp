@@ -111,6 +111,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algorithms", "Algorithms\Al
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Containers", "Containers\Containers.vcxproj", "{80A3A988-8EA4-4867-8015-BCB7F65642C3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Multithreading", "Multithreading\Multithreading.vcxproj", "{45F8203C-64D9-4D05-81BE-7E4101109611}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -551,6 +553,14 @@ Global
 		{80A3A988-8EA4-4867-8015-BCB7F65642C3}.Release|x64.Build.0 = Release|x64
 		{80A3A988-8EA4-4867-8015-BCB7F65642C3}.Release|x86.ActiveCfg = Release|Win32
 		{80A3A988-8EA4-4867-8015-BCB7F65642C3}.Release|x86.Build.0 = Release|Win32
+		{45F8203C-64D9-4D05-81BE-7E4101109611}.Debug|x64.ActiveCfg = Debug|x64
+		{45F8203C-64D9-4D05-81BE-7E4101109611}.Debug|x64.Build.0 = Debug|x64
+		{45F8203C-64D9-4D05-81BE-7E4101109611}.Debug|x86.ActiveCfg = Debug|Win32
+		{45F8203C-64D9-4D05-81BE-7E4101109611}.Debug|x86.Build.0 = Debug|Win32
+		{45F8203C-64D9-4D05-81BE-7E4101109611}.Release|x64.ActiveCfg = Release|x64
+		{45F8203C-64D9-4D05-81BE-7E4101109611}.Release|x64.Build.0 = Release|x64
+		{45F8203C-64D9-4D05-81BE-7E4101109611}.Release|x86.ActiveCfg = Release|Win32
+		{45F8203C-64D9-4D05-81BE-7E4101109611}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
