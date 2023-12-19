@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-// 基本のテンプレートの使いかた
+// テンプレート
 template<typename T>
 T sum(T t) {
     return t;
@@ -12,13 +12,12 @@ T sum(T t) {
 // 可変個引数テンプレート
 template <typename T, typename...Args>
 T sum(T t, Args...args) {
-    return t + sum(args...);
+    return t + sum(args...); // 省略記号（...）は、argsを展開（expansion）する
 }
 
 template<typename...Types>
 class Tuple;
 
-// 基本
 template<>
 class Tuple<> {};
 
@@ -34,6 +33,19 @@ private:
     Head head_;
 };
 
+// 関数のオーバーロード
+template<typename T>
+void print(T t) {
+    std::cout << t << std::endl;
+}
+
+// 再帰関数
+template<typename T,typename...Args>
+void print(T t, Args...args) {
+    std::cout << t << std::endl;
+    print(args...);
+}
+
 int main()
 {
     int result = sum(1, 2, 3, 4, 5);
@@ -41,6 +53,8 @@ int main()
 
     Tuple<int, float, double>tuple(1, 2.0f, 3.0);
     std::cout << "First element: " << tuple.head() << std::endl;
+
+    print(1, 2, 3, 4, 5);
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
