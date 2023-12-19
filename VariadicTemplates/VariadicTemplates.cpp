@@ -19,13 +19,14 @@ template<typename...Types>
 class Tuple;
 
 // 基本
+template<>
 class Tuple<> {};
 
 // 再帰的な場合
 template<typename Head,typename...Tail>
 class Tuple<Head, Tail...> :public Tuple<Tail...> {
 public:
-    Tuple(Head head, Tail...tail) :Tuple<tail...>(tail...), head_(head) {}
+    Tuple(Head head, Tail...tail) :Tuple<Tail...>(tail...), head_(head) {}
 
     Head head()const { return head_; }
 
