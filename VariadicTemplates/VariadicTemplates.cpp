@@ -3,9 +3,43 @@
 
 #include <iostream>
 
+// 基本のテンプレートの使いかた
+template<typename T>
+T sum(T t) {
+    return t;
+}
+
+// 可変個引数テンプレート
+template <typename T, typename...Args>
+T sum(T t, Args...args) {
+    return t + sum(args...);
+}
+
+template<typename...Types>
+class Tuple;
+
+// 基本
+class Tuple<> {};
+
+// 再帰的な場合
+template<typename Head,typename...Tail>
+class Tuple<Head, Tail...> :public Tuple<Tail...> {
+public:
+    Tuple(Head head, Tail...tail) :Tuple<tail...>(tail...), head_(head) {}
+
+    Head head()const { return head_; }
+
+private:
+    Head head_;
+};
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    int result = sum(1, 2, 3, 4, 5);
+    std::cout << "The sum is:" << result << std::endl;
+
+    Tuple<int, float, double>tuple(1, 2.0f, 3.0);
+    std::cout << "First element: " << tuple.head() << std::endl;
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
