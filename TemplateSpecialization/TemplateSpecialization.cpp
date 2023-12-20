@@ -3,9 +3,58 @@
 
 #include <iostream>
 
+// 完全なテンプレートの特殊化
+template<typename T>
+void printData(const T& data) {
+    std::cout << "General template: " << data << std::endl;
+}
+
+template<>
+void printData(const char* const& data) {
+    std::cout << "Specialized template for const char*: " << data << std::endl;
+}
+
+
+// 部分的なテンプレートの特殊化
+template <typename K,typename V>
+class MyPair {
+public:
+    MyPair(K k, V v) :key(k), value(v) {}
+
+    void print()const {
+        std::cout << "General template: key = " << key << ", velue = " << value << std::endl;
+    }
+
+private:
+    K key;
+    V value;
+};
+
+template<typename T>
+class MyPair<T, int> {
+public:
+    MyPair(T k, int v) :key(k), value(v) {}
+
+    void print() const{
+        std::cout << "Partial specialization for int values: key = " << key << ", value = " << value << std::endl;
+    }
+
+private:
+    T key;
+    int value;
+};
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    int a = 5;
+    const char* str = "Hello, world!";
+    printData(a); // General template: 5
+    printData(str); // Specialized template for const char*: Hello, world!
+
+    MyPair<double, std::string>p1(3.2, "example");
+    MyPair<char, int>p2('A', 65);
+    p1.print(); // General template: kye = 3.2, value = example
+    p2.print(); // Partial specialization for int values: key = A, value = 65
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
