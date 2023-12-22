@@ -2,10 +2,25 @@
 //
 
 #include <iostream>
+#include <type_traits>
+
+template<typename T>
+typename std::enable_if<std::is_arithmetic<T>::value, T>::type find_max(T a, T b) {
+	return a > b ? a : b;
+}
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	// トレイト
+	int a;
+	int* a_ptr = &a;
+
+	std::cout << "Is 'a' a pointer? " << std::boolalpha << std::is_pointer<decltype(a)>::value << std::endl;
+	std::cout << "Is 'a_ptr' a pointer? " << std::boolalpha << std::is_pointer<decltype(a_ptr)>::value << std::endl;
+
+	// トレイトの構成
+	int max = find_max(10, 20);
+	std::cout << "Max: " << max << std::endl;
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
