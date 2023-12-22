@@ -123,6 +123,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FullTemplateSpecialization"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PartialTemplateSpecialization", "PartialTemplateSpecialization\PartialTemplateSpecialization.vcxproj", "{BF1EDCF8-08C8-4975-9107-47FC90590FEA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TypeTraits", "TypeTraits\TypeTraits.vcxproj", "{29497392-155D-4469-B319-D41FEF836406}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -611,6 +613,14 @@ Global
 		{BF1EDCF8-08C8-4975-9107-47FC90590FEA}.Release|x64.Build.0 = Release|x64
 		{BF1EDCF8-08C8-4975-9107-47FC90590FEA}.Release|x86.ActiveCfg = Release|Win32
 		{BF1EDCF8-08C8-4975-9107-47FC90590FEA}.Release|x86.Build.0 = Release|Win32
+		{29497392-155D-4469-B319-D41FEF836406}.Debug|x64.ActiveCfg = Debug|x64
+		{29497392-155D-4469-B319-D41FEF836406}.Debug|x64.Build.0 = Debug|x64
+		{29497392-155D-4469-B319-D41FEF836406}.Debug|x86.ActiveCfg = Debug|Win32
+		{29497392-155D-4469-B319-D41FEF836406}.Debug|x86.Build.0 = Debug|Win32
+		{29497392-155D-4469-B319-D41FEF836406}.Release|x64.ActiveCfg = Release|x64
+		{29497392-155D-4469-B319-D41FEF836406}.Release|x64.Build.0 = Release|x64
+		{29497392-155D-4469-B319-D41FEF836406}.Release|x86.ActiveCfg = Release|Win32
+		{29497392-155D-4469-B319-D41FEF836406}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
