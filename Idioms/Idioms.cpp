@@ -1,11 +1,56 @@
 ﻿// Idioms.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
 //
 
+#include "MyClass2.h"
 #include <iostream>
+
+class Resource {
+public:
+    Resource() { /* Acquire resource */ }
+    ~Resource() { /* Release resource */ }
+};
+
+void function() {
+    Resource r; // Resource is acquired
+} // Resource is relesed when r goes out of scope
+
+// ルール・オブ・ファイブ
+// C++11では、３つのルールが５つに拡張され、移動コンストラクターと移動代入演算子がカバーされました
+class MyClass1 {
+public:
+    MyClass1() {}
+    MyClass1(const MyClass1& other) {}
+    MyClass1& operator=(const MyClass1& other) {}
+    ~MyClass1() {} // Destructor
+};
+
+// 非仮想インターフェース（NVI)
+class Base {
+public:
+    void pulicMethod() {
+        privateMethod(); // Calls overridden implementation
+    }
+
+protected:
+    virtual void privateMethod() = 0; // Pure virtual method
+};
+
+class Derived :public Base {
+protected:
+    virtual void privateMethod()override {
+        // Derived implementation
+    }
+};
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    function();
+    
+    MyClass2 myClass2;
+    myClass2.someMethod();
+
+    Derived derived;
+    derived.pulicMethod();
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
