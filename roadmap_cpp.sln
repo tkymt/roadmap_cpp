@@ -127,6 +127,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TypeTraits", "TypeTraits\Ty
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SubstitutionFailureIsNotAnError", "SubstitutionFailureIsNotAnError\SubstitutionFailureIsNotAnError.vcxproj", "{B0504083-642F-4D16-99EB-B8B20F57F58E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Idioms", "Idioms\Idioms.vcxproj", "{D617118A-E0A3-4F97-87B8-121707825A64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -631,6 +633,14 @@ Global
 		{B0504083-642F-4D16-99EB-B8B20F57F58E}.Release|x64.Build.0 = Release|x64
 		{B0504083-642F-4D16-99EB-B8B20F57F58E}.Release|x86.ActiveCfg = Release|Win32
 		{B0504083-642F-4D16-99EB-B8B20F57F58E}.Release|x86.Build.0 = Release|Win32
+		{D617118A-E0A3-4F97-87B8-121707825A64}.Debug|x64.ActiveCfg = Debug|x64
+		{D617118A-E0A3-4F97-87B8-121707825A64}.Debug|x64.Build.0 = Debug|x64
+		{D617118A-E0A3-4F97-87B8-121707825A64}.Debug|x86.ActiveCfg = Debug|Win32
+		{D617118A-E0A3-4F97-87B8-121707825A64}.Debug|x86.Build.0 = Debug|Win32
+		{D617118A-E0A3-4F97-87B8-121707825A64}.Release|x64.ActiveCfg = Release|x64
+		{D617118A-E0A3-4F97-87B8-121707825A64}.Release|x64.Build.0 = Release|x64
+		{D617118A-E0A3-4F97-87B8-121707825A64}.Release|x86.ActiveCfg = Release|Win32
+		{D617118A-E0A3-4F97-87B8-121707825A64}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
