@@ -2,10 +2,59 @@
 //
 
 #include <iostream>
+#include <mutex>
+
+// オブジェクトのライフサイクルを使用してリソースを管理する
+// リソースの有効期間を対応するオブジェクトのスコープに束縛して
+// オブジェクトを作成したときに自動的に確保され、オブジェクトが破棄されたときに自動的に解されるようにする
+
+class ManagedArray {
+public:
+    ManagedArray(size_t size) :_size(size), _data(new int[size]) {}
+    
+    ~ManagedArray() {
+        delete[] _data;
+    }
+
+    // Access function
+    int& operator[](size_t i) {
+        return _data[i];
+    }
+
+private:
+    size_t _size;
+    int* _data;
+};
+
+class Lock {
+public:
+    Lock(std::mutex& mtx) :_mutex(mtx) {
+        _mutex.lock();
+    }
+
+    ~Lock() {
+        _mutex.unlock();
+    }
+
+private:
+    std::mutex& _mutex;
+};
+
+std::mutex some_mutex;
+void protected_function() {
+    Lock lock(some_mutex);
+}
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    ManagedArray arr(10);
+    arr[0] = 42;
+
+    std::thread t1(protected_function);
+    std::thread t2(protected_function);
+
+    t1.join();
+    t2.join();
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
