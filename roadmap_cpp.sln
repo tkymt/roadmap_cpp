@@ -131,6 +131,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Idioms", "Idioms\Idioms.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ResourceAcquisitionIsInitialization", "ResourceAcquisitionIsInitialization\ResourceAcquisitionIsInitialization.vcxproj", "{5E5D3618-C4B3-43A1-B6EA-F62D634A8423}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PimplIdiom", "PimplIdiom\PimplIdiom.vcxproj", "{7B642652-BFF0-4021-85FF-233F023A1C0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -651,6 +653,14 @@ Global
 		{5E5D3618-C4B3-43A1-B6EA-F62D634A8423}.Release|x64.Build.0 = Release|x64
 		{5E5D3618-C4B3-43A1-B6EA-F62D634A8423}.Release|x86.ActiveCfg = Release|Win32
 		{5E5D3618-C4B3-43A1-B6EA-F62D634A8423}.Release|x86.Build.0 = Release|Win32
+		{7B642652-BFF0-4021-85FF-233F023A1C0C}.Debug|x64.ActiveCfg = Debug|x64
+		{7B642652-BFF0-4021-85FF-233F023A1C0C}.Debug|x64.Build.0 = Debug|x64
+		{7B642652-BFF0-4021-85FF-233F023A1C0C}.Debug|x86.ActiveCfg = Debug|Win32
+		{7B642652-BFF0-4021-85FF-233F023A1C0C}.Debug|x86.Build.0 = Debug|Win32
+		{7B642652-BFF0-4021-85FF-233F023A1C0C}.Release|x64.ActiveCfg = Release|x64
+		{7B642652-BFF0-4021-85FF-233F023A1C0C}.Release|x64.Build.0 = Release|x64
+		{7B642652-BFF0-4021-85FF-233F023A1C0C}.Release|x86.ActiveCfg = Release|Win32
+		{7B642652-BFF0-4021-85FF-233F023A1C0C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
