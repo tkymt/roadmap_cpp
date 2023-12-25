@@ -133,6 +133,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ResourceAcquisitionIsInitia
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PimplIdiom", "PimplIdiom\PimplIdiom.vcxproj", "{7B642652-BFF0-4021-85FF-233F023A1C0C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CuriouslyRecurringTemplatePattern", "CuriouslyRecurringTemplatePattern\CuriouslyRecurringTemplatePattern.vcxproj", "{653E7EF0-A786-45A5-921A-9589A349109E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -661,6 +663,14 @@ Global
 		{7B642652-BFF0-4021-85FF-233F023A1C0C}.Release|x64.Build.0 = Release|x64
 		{7B642652-BFF0-4021-85FF-233F023A1C0C}.Release|x86.ActiveCfg = Release|Win32
 		{7B642652-BFF0-4021-85FF-233F023A1C0C}.Release|x86.Build.0 = Release|Win32
+		{653E7EF0-A786-45A5-921A-9589A349109E}.Debug|x64.ActiveCfg = Debug|x64
+		{653E7EF0-A786-45A5-921A-9589A349109E}.Debug|x64.Build.0 = Debug|x64
+		{653E7EF0-A786-45A5-921A-9589A349109E}.Debug|x86.ActiveCfg = Debug|Win32
+		{653E7EF0-A786-45A5-921A-9589A349109E}.Debug|x86.Build.0 = Debug|Win32
+		{653E7EF0-A786-45A5-921A-9589A349109E}.Release|x64.ActiveCfg = Release|x64
+		{653E7EF0-A786-45A5-921A-9589A349109E}.Release|x64.Build.0 = Release|x64
+		{653E7EF0-A786-45A5-921A-9589A349109E}.Release|x86.ActiveCfg = Release|Win32
+		{653E7EF0-A786-45A5-921A-9589A349109E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
