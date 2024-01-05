@@ -17,7 +17,7 @@ int main()
         std::cout << num << std::endl;
     }
 
-    auto generic_sum = [](auto a, auto b) {return a + b};
+    auto generic_sum = [](auto a, auto b) { return a + b; };
     int binary_number = 0b1010;
 
     std::map<std::string, int> my_map = { {"A",1},{"B",2} };
@@ -30,7 +30,6 @@ int main()
         // use 'key' and 'value' here
     }
 
-    std::vector<int> numbers = { 1,2,3,4 };
     auto doubled = numbers | std::views::transform([](int n) {return n * 2; });
 }
 
