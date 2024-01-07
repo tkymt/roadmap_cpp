@@ -145,6 +145,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CopyWrite", "CopyWrite\Copy
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Standards", "Standards\Standards.vcxproj", "{7652DADB-58CD-4EEF-B4F7-CCF2CBE0E25D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cpp11Cpp14", "Cpp11Cpp14\Cpp11Cpp14.vcxproj", "{1B4923E8-EAC7-49F2-A8DF-8E1C2F267C21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -721,6 +723,14 @@ Global
 		{7652DADB-58CD-4EEF-B4F7-CCF2CBE0E25D}.Release|x64.Build.0 = Release|x64
 		{7652DADB-58CD-4EEF-B4F7-CCF2CBE0E25D}.Release|x86.ActiveCfg = Release|Win32
 		{7652DADB-58CD-4EEF-B4F7-CCF2CBE0E25D}.Release|x86.Build.0 = Release|Win32
+		{1B4923E8-EAC7-49F2-A8DF-8E1C2F267C21}.Debug|x64.ActiveCfg = Debug|x64
+		{1B4923E8-EAC7-49F2-A8DF-8E1C2F267C21}.Debug|x64.Build.0 = Debug|x64
+		{1B4923E8-EAC7-49F2-A8DF-8E1C2F267C21}.Debug|x86.ActiveCfg = Debug|Win32
+		{1B4923E8-EAC7-49F2-A8DF-8E1C2F267C21}.Debug|x86.Build.0 = Debug|Win32
+		{1B4923E8-EAC7-49F2-A8DF-8E1C2F267C21}.Release|x64.ActiveCfg = Release|x64
+		{1B4923E8-EAC7-49F2-A8DF-8E1C2F267C21}.Release|x64.Build.0 = Release|x64
+		{1B4923E8-EAC7-49F2-A8DF-8E1C2F267C21}.Release|x86.ActiveCfg = Release|Win32
+		{1B4923E8-EAC7-49F2-A8DF-8E1C2F267C21}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
